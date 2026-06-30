@@ -1,59 +1,186 @@
-# MovieWatchlist
+# 🎬 Movie Watchlist
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+> This project is part of the **Angular Projects** collection.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📊 Project Information
+
+| Information | Details |
+|-------------|---------|
+| **Framework** | Angular 19 |
+| **Language** | TypeScript |
+| **Architecture** | Standalone Components |
+| **State Management** | Angular Services |
+| **Storage** | Local Storage |
+| **Project Type** | Learning Project |
+| **Difficulty** | Beginner / Intermediate |
+
+---
+
+## 📖 About
+
+Movie Watchlist is a Single Page Application (SPA) developed with **Angular 19** that allows users to build and manage a personal collection of movies they want to watch.
+
+The project was created to strengthen my understanding of Angular fundamentals using the traditional service-based architecture while applying component-based development, clean code organization and local data persistence.
+
+All data is stored locally using the browser's **Local Storage**, allowing the application to preserve the watchlist between sessions without requiring a backend.
+
+---
+
+## ✨ Features
+
+- 🎬 Add movies to the watchlist
+- ✏️ Edit movie information
+- 🗑️ Remove movies
+- 🔍 Search movies
+- 🎯 Filter the movie collection
+- 💾 Local Storage persistence
+- 🧩 State management through Angular Services
+- 📱 Responsive interface
+
+---
+
+## 🛠 Technologies
+
+- Angular 19
+- TypeScript
+- Angular Services
+- Standalone Components
+- Angular Router
+- FormsModule
+- HTML5
+- CSS3
+- Local Storage
+
+---
+
+## 📂 Project Structure
+
+```text
+src
+└── app
+    ├── components
+    │   ├── watch-filter
+    │   ├── watch-item
+    │   ├── watch-item-form
+    │   └── watch-list
+    │
+    ├── dtos
+    │
+    ├── models
+    │
+    ├── pages
+    │   └── home
+    │
+    └── services
+        └── watch-list-service.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to the project folder
+
+```bash
+cd Movie-Watchlist
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📚 What I Learned
 
-## Building
+During the development of this project I improved my understanding of:
 
-To build the project run:
+- Angular Services
+- Component-based architecture
+- Standalone Components
+- Component communication
+- Local Storage persistence
+- Application organization
+- TypeScript development
+- Angular best practices
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🔮 Future Improvements
 
-## Running unit tests
+Possible future enhancements include:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Movie posters
+- Movie ratings
+- Categories and genres
+- Favorites
+- REST API integration
+- User authentication
+- Cloud synchronization
+- Responsive UI improvements
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📁 Repository Collection
 
-For end-to-end (e2e) testing, run:
+This project belongs to the **Angular Projects** repository, a collection of applications developed during my Angular learning journey.
 
-```bash
-ng e2e
-```
+The repository includes multiple projects built using both the traditional Angular architecture and the new **Angular Signals** reactive model.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Other available projects include:
 
-## Additional Resources
+- 📋 Task Manager
+- 💰 Expense Tracker
+- 📝 Notes App
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 👨‍💻 Author
+
+**Giuseppe Giordano**
+
+Full Stack Developer
+
+### Backend
+
+- Java
+- Spring Boot
+- Node.js
+- Express.js
+
+### Frontend
+
+- Angular
+- React
+- Next.js
+
+### Databases
+
+- MySQL
+- MongoDB
+
+---
+
+⭐ If you found this project interesting, feel free to explore the other applications available in this repository.
