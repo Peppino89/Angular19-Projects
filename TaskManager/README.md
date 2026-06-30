@@ -1,5 +1,7 @@
 # 📋 Task Manager
 
+> This project is part of the **Angular Projects** collection, a repository containing multiple Angular applications developed to practice different framework features and architectural approaches.
+
 ## About
 
 Task Manager is a single-page application developed with **Angular 19** to manage daily tasks through a simple and intuitive interface.
