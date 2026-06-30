@@ -1,59 +1,187 @@
-# ExpenseTrackerWithSignal
+# 💰 Expense Tracker (Angular Signals)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+> This project is part of the **Angular Projects** collection.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📊 Project Information
+
+| Information | Details |
+|-------------|---------|
+| **Framework** | Angular 19 |
+| **Language** | TypeScript |
+| **Architecture** | Standalone Components |
+| **State Management** | Angular Signals |
+| **Storage** | Local Storage |
+| **Project Type** | Learning Project |
+| **Difficulty** | Beginner / Intermediate |
+
+---
+
+## 📖 About
+
+Expense Tracker is a Single Page Application (SPA) developed with **Angular 19** and **Angular Signals** that allows users to manage personal income and expenses through a clean and intuitive interface.
+
+The project was created to explore Angular's modern reactive programming model using **Signals**, while strengthening concepts such as standalone components, service-based architecture and state management.
+
+All transaction data is stored locally using the browser's **Local Storage**, allowing information to persist between sessions without requiring a backend.
+
+---
+
+## ✨ Features
+
+- 💰 Add new transactions
+- ✏️ Edit existing transactions
+- 🗑️ Delete transactions
+- 🔍 Search transactions
+- 🎯 Filter transactions
+- 📊 Display financial statistics
+- 💾 Local Storage persistence
+- ⚡ State management with Angular Signals
+- 📱 Responsive interface
+
+---
+
+## 🛠 Technologies
+
+- Angular 19
+- TypeScript
+- Angular Signals
+- Standalone Components
+- Angular Router
+- FormsModule
+- HTML5
+- CSS3
+- Local Storage
+
+---
+
+## 📂 Project Structure
+
+```text
+src
+└── app
+    ├── components
+    │   ├── transaction-form
+    │   ├── transaction-item
+    │   ├── transaction-list
+    │   ├── transaction-filter
+    │   └── transaction-stats
+    │
+    ├── dtos
+    │
+    ├── models
+    │
+    ├── pages
+    │
+    └── services
+        └── transaction-signal.service.ts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### Navigate to the project folder
+
+```bash
+cd ExpenseTrackerWithSignal
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📚 What I Learned
 
-## Building
+During the development of this project I improved my understanding of:
 
-To build the project run:
+- Angular Signals
+- Signal-based state management
+- Standalone Components
+- Component communication
+- Local Storage persistence
+- Service architecture
+- TypeScript development
+- Angular best practices
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🔮 Future Improvements
 
-## Running unit tests
+Possible future enhancements include:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- REST API integration
+- Authentication
+- Multiple accounts
+- Transaction categories
+- Charts and analytics
+- Monthly reports
+- Cloud synchronization
+- Responsive UI improvements
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📁 Repository Collection
 
-For end-to-end (e2e) testing, run:
+This project belongs to the **Angular Projects** repository, a collection of applications developed during my Angular learning journey.
 
-```bash
-ng e2e
-```
+The repository includes multiple projects built using both the traditional Angular architecture and the new **Angular Signals** reactive model.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Other available projects include:
 
-## Additional Resources
+- 📋 Task Manager
+- 📝 Notes App
+- 🎬 Movie Watchlist
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 👨‍💻 Author
+
+**Giuseppe Giordano**
+
+Full Stack Developer
+
+### Backend
+
+- Java
+- Spring Boot
+- Node.js
+- Express.js
+
+### Frontend
+
+- Angular
+- React
+- Next.js
+
+### Databases
+
+- MySQL
+- MongoDB
+
+---
+
+⭐ If you found this project interesting, feel free to explore the other applications available in this repository.
