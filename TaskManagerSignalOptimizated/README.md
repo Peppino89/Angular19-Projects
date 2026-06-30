@@ -1,59 +1,142 @@
-# TaskManagerSignalOptimizated
+# 📋 Task Manager (Signals - Optimized)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+> This project is part of the **Angular Projects** collection.
 
-## Development server
+## About
 
-To start a local development server, run:
+This project represents the **optimized version** of the Task Manager application built with **Angular 19** and **Angular Signals**.
+
+Starting from the previous Signals implementation, the application was refactored to improve code organization, maintainability and overall readability while preserving the same core functionality.
+
+The objective of this version was not to introduce new features, but to apply cleaner development practices and build a more maintainable Angular application.
+
+---
+
+## Features
+
+- ✅ Create new tasks
+- ✏️ Edit existing tasks
+- 🗑️ Delete tasks
+- ✔️ Mark tasks as completed or pending
+- 🔍 Search tasks
+- 🎯 Filter tasks (All / Completed / Pending)
+- 📊 Display task statistics
+- 💾 Local Storage persistence
+- ⚡ State management with Angular Signals
+
+---
+
+## Technologies
+
+- Angular 19
+- TypeScript
+- Angular Signals
+- HTML5
+- CSS3
+- Standalone Components
+- Angular Router
+- FormsModule
+- Local Storage
+
+---
+
+## Project Structure
+
+```
+src/app
+│
+├── components
+│   ├── task-form
+│   ├── task-item
+│   ├── task-list
+│   ├── task-filter
+│   └── task-stats
+│
+├── models
+├── pages
+└── services
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project
+
+```bash
+cd TaskManagerSignalOptimized
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## Improvements Compared to the Previous Version
 
-## Building
+This version focuses on improving the overall project quality by:
 
-To build the project run:
+- Better code organization
+- Cleaner component structure
+- Improved maintainability
+- More readable application architecture
+- Better separation of responsibilities
+- Refactoring while preserving application behavior
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## What I Learned
 
-## Running unit tests
+During this project I strengthened my understanding of:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- Angular Signals
+- Modern Angular architecture
+- Component communication
+- State management
+- Application refactoring
+- Code organization
+- Clean code principles
+- Angular best practices
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Future Improvements
 
-For end-to-end (e2e) testing, run:
+Possible future enhancements include:
 
-```bash
-ng e2e
-```
+- REST API integration
+- Authentication
+- User management
+- Task priorities
+- Categories
+- Due dates
+- Responsive UI improvements
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Giuseppe Giordano**
+
+Full Stack Developer (Java • Spring Boot • Angular • React)
