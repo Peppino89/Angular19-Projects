@@ -1,0 +1,30 @@
+<h1>Task Manager (Signals)</h1>
+
+<!-- FORM -->
+<app-task-form (taskAdded)="onTaskAdded($event)"></app-task-form>
+
+<!-- FILTRI -->
+<app-task-filter
+  (searchChanged)="onSearchChanged($event)"
+  (filterChanged)="onFilterChanged($event)">
+</app-task-filter>
+
+<!-- STATISTICHE -->
+<app-task-stats
+  [totalTasks]="taskService.totalTasks()"
+  [completedTasks]="taskService.completedTasks()"
+  [pendingTasks]="taskService.pendingTasks()">
+</app-task-stats>
+
+<!-- AZIONI GLOBALI -->
+<div class="actions">
+  <button (click)="confirmClear()">Svuota tutto</button>
+</div>
+
+<!-- LISTA TASK -->
+<app-task-list
+  [tasks]="taskService.filteredTasks()"
+  (deleteTask)="onDeleteTask($event)"
+  (toggleTask)="onToggleTask($event)"
+  (editTask)="onEditTask($event)">
+</app-task-list>

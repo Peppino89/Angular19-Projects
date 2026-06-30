@@ -1,0 +1,25 @@
+<div class="task-filter">
+  <div class="filter-group">
+    <label for="search">Cerca Task</label>
+    <input
+      id="search"
+      type="text"
+      [ngModel]="searchTerm()"
+      (ngModelChange)="searchTerm.set($event)"
+      placeholder="Scrivi il titolo del task"
+    />
+  </div>
+
+  <div class="filter-group">
+    <label for="status">Filtra per stato</label>
+    <select
+      id="status"
+      [ngModel]="selectedFilter()"
+      (ngModelChange)="selectedFilter.set($event)"
+    >
+      <option value="all">Tutti</option>
+      <option value="completed">Completati</option>
+      <option value="pending">Da fare</option>
+    </select>
+  </div>
+</div>

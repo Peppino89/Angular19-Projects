@@ -1,0 +1,26 @@
+<div class="watch-filter">
+  <div class="filter-group">
+    <label for="search">Cerca titolo</label>
+    <input
+      id="search"
+      type="text"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchChange()"
+      placeholder="Cerca film o serie"
+    />
+  </div>
+
+  <div class="filter-group">
+    <label for="status">Filtra per stato</label>
+    <select
+      id="status"
+      [(ngModel)]="selectedStatus"
+      (ngModelChange)="onStatusChange()"
+    >
+      <option value="all">Tutti</option>
+      <option value="planned">Da vedere</option>
+      <option value="watching">In corso</option>
+      <option value="watched">Visti</option>
+    </select>
+  </div>
+</div>

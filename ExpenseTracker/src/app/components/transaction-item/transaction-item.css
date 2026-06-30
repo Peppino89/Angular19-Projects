@@ -1,0 +1,46 @@
+.transaction-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.transaction-card.income {
+  border-left: 6px solid #4caf50;
+}
+
+.transaction-card.expense {
+  border-left: 6px solid #f44336;
+}
+
+.transaction-info {
+  flex: 1;
+}
+
+.transaction-info h3 {
+  margin: 0 0 8px;
+}
+
+.transaction-info p {
+  margin: 0 0 6px;
+}
+
+.transaction-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.transaction-right strong {
+  font-size: 18px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}

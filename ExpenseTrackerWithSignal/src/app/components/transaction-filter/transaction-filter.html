@@ -1,0 +1,24 @@
+<div class="transaction-filter">
+  <div class="filter-group">
+     <label for="search">Cerca Transazione</label>
+    <input id="search"
+           type="text"
+           [ngModel]="transactionService.searchTerm()"
+           (ngModelChange)="transactionService.setSearchTerm($event)"
+           placeholder="Cerca per titolo"/>
+  </div>
+
+  <div class="filter-group">
+    <label for="type">Filtra per titolo</label>
+    <select id="type"
+            [ngModel]="transactionService.selectedType()"
+            (ngModelChange)="transactionService.setSelectedType($event)">
+
+      <option value="all">Tutte</option>
+      <option value="income">Entrate</option>
+      <option value="expense">Uscite</option>
+    </select>
+
+  </div>
+
+</div>

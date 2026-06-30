@@ -1,0 +1,20 @@
+<app-task-form (taskAdded)="onTaskAdded($event)"></app-task-form>
+<app-task-filter
+  (searchChanged)="onSearchChanged($event)"
+  (filterChanged)="onFilterChanged($event)">
+</app-task-filter>
+<app-task-stats
+  [totalTasks]="totalTasks"
+  [completedTasks]="completedTasks"
+  [pendingTasks]="pendingTasks"
+>
+</app-task-stats>
+<app-task-list
+  [tasks]="filteredTasks"
+  (deleteTask)="onDeleteTask($event)"
+  (toggleTask)="onToggleTask($event)"
+   (editTask)="onEditTask($event)"
+>
+
+</app-task-list>
+<button (click)="clearAllTasks()">Svuota tutto</button>

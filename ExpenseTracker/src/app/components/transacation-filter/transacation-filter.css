@@ -1,0 +1,22 @@
+.transaction-filter {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 220px;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px;
+  font-size: 16px;
+}

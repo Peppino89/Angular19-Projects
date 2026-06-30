@@ -1,0 +1,24 @@
+<div class="watch-form">
+  <h2>Aggiungi Elemento</h2>
+
+  <div class="form-row">
+    <input type="text" [(ngModel)]="title" name="title" placeholder="Titolo"/>
+    <input type="text"[(ngModel)]="genre" name="genre" placeholder="Genere"/>
+  </div>
+
+  <div class="form-row">
+    <select [(ngModel)]="type" name="type">
+      <option value="movie">Film</option>
+      <option value="series">Serie</option>
+    </select>
+
+    <select [(ngModel)]="status" name="status">
+      <option value="planned">Da Vedere</option>
+      <option value="watching">In corso</option>
+      <option value="watched">Visto</option>
+    </select>
+
+    <input type="number" [(ngModel)]="rating" name="rating" min="1" max="5" placeholder="Voto personale (1-5)">
+  </div>
+  <button (click)="onSubmit()">Aggiungi</button>
+</div>

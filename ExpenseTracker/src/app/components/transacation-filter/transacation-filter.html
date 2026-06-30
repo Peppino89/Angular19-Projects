@@ -1,0 +1,25 @@
+<div class="transaction-filter">
+  <div class="filter-group">
+    <label for="search">Cerca transazione</label>
+    <input
+      id="search"
+      type="text"
+      [(ngModel)]="searchTerm"
+      (ngModelChange)="onSearchChange()"
+      placeholder="Cerca per titolo"
+    />
+  </div>
+
+  <div class="filter-group">
+    <label for="type">Filtra per tipo</label>
+    <select
+      id="type"
+      [(ngModel)]="selectedType"
+      (ngModelChange)="onTypeChange()"
+    >
+      <option value="all">Tutte</option>
+      <option value="income">Entrate</option>
+      <option value="expense">Uscite</option>
+    </select>
+  </div>
+</div>

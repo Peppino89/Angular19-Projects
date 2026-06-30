@@ -1,0 +1,26 @@
+<h1>Expense Tracker</h1>
+
+<app-transaction-form
+(transactionAdded)="onTransactionAdded($event)">
+</app-transaction-form>
+
+<app-transacation-filter
+  (searchChanged)="onSearchChanged($event)"
+  (typeChanged)="onTypeChanged($event)">
+
+</app-transacation-filter>
+
+<p>Totale Transazioni: {{ transactions.length }}</p>
+<p>Entrate: {{ totalIncome }}</p>
+<p>Uscite: {{ totalExpense }}</p>
+<p>Saldo: {{ balance }}</p>
+<app-transaction-list
+  [transactions]="filteredTransactions"
+  (deleteTransaction)="onDeleteTransaction($event)">
+</app-transaction-list>
+
+<app-transaction-stats
+  [totalIncome]="totalIncome"
+  [totalExpense]="totalExpense"
+  [balance]="balance">
+</app-transaction-stats>

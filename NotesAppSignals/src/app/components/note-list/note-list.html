@@ -1,0 +1,11 @@
+<div class="note-list">
+  @for(note of noteSignalService.filteredNotes(); track note.id){
+    <app-note-item [note]="note"></app-note-item>
+  } @empty {
+    <div class="empty-state">
+      <h3>Nessuna nota trovata</h3>
+      <p>Aggiungi una nota oppure modifica i filtri</p>
+    </div>
+  }
+
+</div>

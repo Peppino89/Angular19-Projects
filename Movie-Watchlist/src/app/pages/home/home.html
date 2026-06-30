@@ -1,0 +1,36 @@
+<div class="page-container">
+  <div class="page-header">
+    <p class="eyebrow">Entertainment Tracker</p>
+    <h1>Movie Watchlist</h1>
+    <p class="subtitle">
+      Tieni traccia dei film e delle serie che vuoi vedere o che hai già visto.
+    </p>
+  </div>
+
+  <app-watch-item-form (itemAdded)="onAdded($event)"></app-watch-item-form>
+  <div class="stats">
+    <div class="stat-card total">
+      <span class="stat-label">Totali</span>
+      <strong class="stat-value">{{ totalItems }}</strong>
+    </div>
+
+    <div class="stat-card watched">
+      <span class="stat-label">Visti</span>
+      <strong class="stat-value">{{ watchedCount }}</strong>
+    </div>
+
+    <div class="stat-card planned">
+      <span class="stat-label">Da vedere</span>
+      <strong class="stat-value">{{ plannedCount }}</strong>
+    </div>
+  </div>
+  <app-watch-filter
+    (searchChanged)="onSearchChanged($event)"
+    (statusChanged)="onStatusChanged($event)">
+  </app-watch-filter>
+  <app-watch-list
+    [items]="filteredItems"
+    (deleteItem)="onDeleteItem($event)"
+    (updateItem)="onUpdateItem($event)">
+  </app-watch-list>
+</div>

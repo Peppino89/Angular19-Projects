@@ -1,0 +1,12 @@
+<div class="transaction-list">
+
+  @for( transaction of transactionService.filteredTransactions(); track transaction.id){
+    <app-transaction-item [transaction]="transaction" ]></app-transaction-item>
+
+  } @empty {
+    <div class="empty-state">
+      <h3> Nessuna transazione trovata</h3>
+      <p>Aggiungi una transazione oppure modifica i filtri</p>
+    </div>
+  }
+</div>

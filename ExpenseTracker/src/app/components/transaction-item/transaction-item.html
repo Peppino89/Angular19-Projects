@@ -1,0 +1,19 @@
+<div class="transaction-card" [ngClass]="transaction.type">
+  <div class="transaction-info">
+    <h3>{{ transaction.title }}</h3>
+    <p>Categoria: {{ transaction.category }}</p>
+    <p>Data: {{ formattedDate }}</p>
+    <small>
+      Tipo:
+      {{ transaction.type === 'income' ? 'Entrata' : 'Uscita' }}
+    </small>
+  </div>
+
+  <div class="transaction-right">
+    <strong>
+      {{ transaction.type === 'income' ? '+' : '-' }}{{ transaction.amount }}
+    </strong>
+
+    <button (click)="onDelete()">Elimina</button>
+  </div>
+</div>

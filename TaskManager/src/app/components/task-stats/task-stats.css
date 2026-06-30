@@ -1,0 +1,24 @@
+.task-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0 0 10px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}

@@ -1,0 +1,14 @@
+<div class="watch-list">
+  @for (item of items; track item.id) {
+    <app-watch-item
+      [item]="item"
+      (deleItem)="onDelete($event)"
+      (updateItem)="onUpdate($event)">
+    </app-watch-item>
+  } @empty {
+    <div class="empty-state">
+      <h3>Nessun Elemento</h3>
+      <p>Aggiungi un film o una serie per iniziare</p>
+    </div>
+  }
+</div>

@@ -1,0 +1,50 @@
+<div class="note-card" [class.favorite]="note().favorite">
+  @if (!isEditing) {
+    <div class="note-header">
+      <div class="note-title-group">
+        <h3>{{ note().title }}</h3>
+        <span class="note-category">{{ note().category }}</span>
+      </div>
+
+      <button class="favorite-btn" (click)="onToggleFavorite()">
+        {{ note().favorite ? '★' : '☆' }}
+      </button>
+    </div>
+
+    <p class="note-content">{{ note().content }}</p>
+
+    <div class="note-footer">
+      <small>{{ formattedDate }}</small>
+
+      <div class="actions">
+        <button (click)="onEdit()">Modifica</button>
+        <button class="delete-btn" (click)="onDelete()">Elimina</button>
+      </div>
+    </div>
+  } @else {
+    <div class="note-edit">
+      <input
+        [(ngModel)]="editTitle"
+        placeholder="Titolo"
+      />
+
+      <textarea
+        [(ngModel)]="editContent"
+        rows="4"
+        placeholder="Contenuto"
+      ></textarea>
+
+      <input
+        [(ngModel)]="editCategory"
+        placeholder="Categoria"
+      />
+    </div>
+
+    <div class="note-footer">
+      <div class="actions">
+        <button (click)="onSave()">Salva</button>
+        <button (click)="onCancel()">Annulla</button>
+      </div>
+    </div>
+  }
+</div>

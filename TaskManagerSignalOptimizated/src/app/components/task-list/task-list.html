@@ -1,0 +1,7 @@
+<div class="task-list">
+  @for (task of taskService.filteredTasks(); track task.id) {
+    <app-task-item [task]="task"></app-task-item>
+  } @empty {
+    <p>Nessun task presente.</p>
+  }
+</div>

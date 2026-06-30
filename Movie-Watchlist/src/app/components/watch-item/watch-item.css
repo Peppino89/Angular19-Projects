@@ -1,0 +1,128 @@
+.watch-card {
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #eceff5;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.watch-card.planned {
+  border-left: 6px solid #f59e0b;
+}
+
+.watch-card.watching {
+  border-left: 6px solid #3b82f6;
+}
+
+.watch-card.watched {
+  border-left: 6px solid #22c55e;
+}
+
+.watch-main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.watch-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.watch-top h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge.type {
+  background: #ecfeff;
+  color: #0891b2;
+}
+
+.badge.genre {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.badge.rating {
+  background: #fff7ed;
+  color: #d97706;
+}
+
+.watch-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.watch-footer small {
+  color: #6b7280;
+}
+
+.watch-footer select {
+  padding: 10px 12px;
+  border: 1px solid #d7dce5;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+}
+
+.watch-footer select:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.12);
+}
+
+.delete-btn {
+  border: none;
+  border-radius: 10px;
+  background: #ef4444;
+  color: white;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .watch-top {
+    flex-direction: column;
+  }
+
+  .watch-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .delete-btn,
+  .watch-footer select {
+    width: 100%;
+  }
+}

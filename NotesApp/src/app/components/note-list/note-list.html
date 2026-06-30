@@ -1,0 +1,18 @@
+<div class="note-list">
+  @for(note of notes; track note.id){
+    <app-note-item [note]="note"
+                   (deleNote)="onDeleteNote($event)"
+                   (toggleFavorite)="onToggleFavorite($event)"
+                   (updateNote)="onUpdateNote($event)" >
+
+    </app-note-item>
+
+  } @empty {
+
+    <div class="empty-state">
+      <h3>Nessuna nota trovata</h3>
+      <p>Aggiungi una nota</p>
+    </div>
+  }
+
+</div>

@@ -1,0 +1,41 @@
+<div class="task-card" [class.completed]="task().completed">
+  @if (!isEditing) {
+    <div class="task-info">
+      <h3>{{ task().title }}</h3>
+      <p>{{ task().description }}</p>
+      <small>
+        Stato:
+        {{ task().completed ? 'Completato' : 'Da fare' }}
+      </small>
+    </div>
+
+    <div class="task-actions">
+      <button (click)="onToggle()">
+        {{ task().completed ? 'Segna da fare' : 'Completa' }}
+      </button>
+      <button (click)="startEdit()">Modifica</button>
+      <button (click)="onDelete()">Elimina</button>
+    </div>
+  } @else {
+    <div class="task-edit">
+      <input
+        [ngModel]="editTitle"
+        (ngModelChange)="editTitle = $event"
+        type="text"
+        placeholder="Modifica titolo"
+      />
+
+      <textarea
+        [ngModel]="editDescription"
+        (ngModelChange)="editDescription = $event"
+        rows="3"
+        placeholder="Modifica descrizione"
+      ></textarea>
+    </div>
+
+    <div class="task-actions">
+      <button (click)="saveEdit()">Salva</button>
+      <button (click)="cancelEdit()">Annulla</button>
+    </div>
+  }
+</div>

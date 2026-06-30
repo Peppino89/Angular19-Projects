@@ -1,0 +1,18 @@
+<div class="trasaction-stats">
+
+  <div class="stat-card income">
+    <span class="stat-label">Entrata</span>
+    <strong class="stat-value">+{{ transactionService.totalIncome() }}</strong>
+  </div>
+
+  <div class="stat-card expense">
+    <span class="stat-label">Uscita</span>
+    <strong class="stat-value">-{{ transactionService.totalExpense() }}</strong>
+  </div>
+
+  <div class="stat-card balance">
+    <span class="stat-label">Saldo</span>
+    <strong class="stat-value">-{{ transactionService.balance() }}</strong>
+  </div>
+
+</div>

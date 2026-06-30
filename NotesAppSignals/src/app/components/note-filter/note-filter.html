@@ -1,0 +1,21 @@
+<div class="note-filter">
+  <div class="filter-group">
+    <label for="search">Cerca Nota</label>
+    <input id="search"
+           type="text"
+           [ngModel]="noteSignalService.searchTerm()"
+           (ngModelChange)="noteSignalService.setSearchTerm($event)"
+            placeholder="Cerca per titolo o per contenuto"
+    />
+  </div>
+  <div class="filter-group">
+    <label for="category">Filtra per categoria</label>
+    <input id="category"
+           type="text"
+           [ngModel]="noteSignalService.selectedCategory()"
+           (ngModelChange)="noteSignalService.setSelectedCategory($event)"
+           placeholder="Scrivi una categoria"
+    />
+  </div>
+
+</div>

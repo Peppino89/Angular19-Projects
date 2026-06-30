@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 30%),
+    #f7f8fc;
+}
+
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 36px 20px 48px;
+}
+
+/* HEADER */
+.page-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #10b981;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 680px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #eceff5;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-card.total {
+  border-left: 6px solid #4f46e5;
+}
+
+.stat-card.watched {
+  border-left: 6px solid #22c55e;
+}
+
+.stat-card.planned {
+  border-left: 6px solid #f59e0b;
+}
+
+/* EMPTY STATE */
+.empty-state {
+  margin-top: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px dashed #d7dce5;
+  text-align: center;
+  color: #6b7280;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.empty-state h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}

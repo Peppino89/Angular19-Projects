@@ -1,0 +1,32 @@
+.transaction-stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.stat-card.income {
+  border-left: 6px solid #4caf50;
+}
+
+.stat-card.expense {
+  border-left: 6px solid #f44336;
+}
+
+.stat-card.balance {
+  border-left: 6px solid #2196f3;
+}
+
+.stat-card p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}

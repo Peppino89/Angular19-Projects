@@ -1,0 +1,27 @@
+.watch-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.empty-state {
+  padding: 28px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px dashed #d7dce5;
+  text-align: center;
+  color: #6b7280;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.empty-state h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 14px;
+}

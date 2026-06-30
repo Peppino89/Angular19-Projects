@@ -1,0 +1,23 @@
+<div class="watch-card" [ngClass]="item.status">
+  <div class="watch-main">
+    <div class="watch-top">
+      <div>
+        <h3>{{ item.title }}</h3>
+        <div class="badge">
+          <span class="badge type">{{ item.type === 'movie' ? 'Film' : 'Serie'}}</span>
+          <span class="badge genre">{{ item.genre }}</span>
+          <span class="badge rating">⭐{{ item.rating }}/5</span>
+        </div>
+      </div>
+      <button class="delete-btn" (click)="onDeleteItem()">Elimina</button>
+    </div>
+    <div class="watch-footer">
+      <small>Aggiunto il {{ formattedDate }}</small>
+      <select [ngModel]="item.status" (ngModelChange)="onStatusChange($event)">
+        <option value = "planned">Da Vedere</option>
+        <option value = "watching">In corso</option>
+        <option value = "watched">Visto</option>
+      </select>
+    </div>
+  </div>
+</div>

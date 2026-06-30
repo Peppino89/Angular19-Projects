@@ -1,0 +1,21 @@
+<div class="note-filter">
+  <div class="filter-group">
+    <label for="search">Cerca nota</label>
+    <input id="search"
+           type="text"
+           [(ngModel)]="searchTerm"
+           (ngModelChange)="onSearchChanged()"
+           placeholder="Cerca per titolo o contenuto"
+    />
+  </div>
+  <div class="filter-group">
+    <label for="category">Filtra per categoria</label>
+    <input id="category"
+           type="text"
+           [(ngModel)]="selectedCategory"
+           (ngModelChange)="onCategoryChanged()"
+           placeholder="Scrivi una categoria oppure 'all'"
+    />
+  </div>
+
+</div>

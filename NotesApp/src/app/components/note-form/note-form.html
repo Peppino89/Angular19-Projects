@@ -1,0 +1,8 @@
+<div class="note-form">
+  <h2>Aggiungi Nota</h2>
+
+  <input type="text" [(ngModel)]="title" name="title" placeholder="Titolo"/>
+  <textarea type="text" [(ngModel)]="content" name="content" rows="5" placeholder="Scrivi il contenuto della nota"></textarea>
+  <input type="text" [(ngModel)]="category" name="category" placeholder="Categoria"/>
+  <button (click)="onSubmit()">Aggiungi Nota</button>
+</div>
