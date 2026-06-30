@@ -1,59 +1,145 @@
-# TaskManagerSignal
+# 📋 Task Manager (Angular Signals)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+> This project is part of the **Angular Projects** collection.
 
-## Development server
+## About
 
-To start a local development server, run:
+This project is the **Signals-based evolution** of the original Task Manager application.
+
+Its primary purpose is to explore Angular's new reactive programming model introduced with **Signals**, while maintaining the same application features and architecture of the classic version.
+
+Instead of relying on the traditional RxJS-based state management approach, this version uses Angular Signals to provide a simpler, more declarative and more predictable way to manage application state.
+
+---
+
+## Features
+
+- ✅ Create new tasks
+- ✏️ Edit existing tasks
+- 🗑️ Delete tasks
+- ✔️ Mark tasks as completed or pending
+- 🔍 Search tasks
+- 🎯 Filter tasks (All / Completed / Pending)
+- 📊 Display task statistics
+- 💾 Persistent storage using Local Storage
+- ⚡ State management powered by Angular Signals
+
+---
+
+## Technologies
+
+- Angular 19
+- TypeScript
+- Angular Signals
+- HTML5
+- CSS3
+- Standalone Components
+- Angular Router
+- FormsModule
+- Local Storage
+
+---
+
+## Project Structure
+
+```
+src/app
+│
+├── components
+│   ├── task-form
+│   ├── task-item
+│   ├── task-list
+│   ├── task-filter
+│   └── task-stats
+│
+├── models
+│
+├── services
+│   └── task-signal.service.ts
+│
+└── pages
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+Go to the project folder
+
+```bash
+cd TaskManagerSignal
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the application
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser at
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## What I Learned
 
-## Building
+This project allowed me to deepen my understanding of Angular's modern reactive features, including:
 
-To build the project run:
+- Angular Signals
+- Signal-based state management
+- Component communication
+- Standalone Components
+- Local Storage persistence
+- Component-based architecture
+- Migration from a traditional RxJS approach to Signals
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Differences from the Classic Version
 
-## Running unit tests
+Compared to the original Task Manager, this version:
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+- uses Angular Signals for state management;
+- reduces the need for Observable-based data flows;
+- simplifies component reactivity;
+- follows Angular's latest recommended development approach.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Future Improvements
 
-For end-to-end (e2e) testing, run:
+Possible future enhancements include:
 
-```bash
-ng e2e
-```
+- Backend integration with REST APIs
+- Authentication
+- Task priorities
+- Categories
+- Due dates
+- Drag & Drop support
+- Responsive UI improvements
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
+## Repository Collection
 
-## Additional Resources
+This project belongs to the **Angular Projects** repository, a collection of applications developed to explore Angular concepts, compare different architectural approaches and continuously improve my frontend development skills.
+---
+## Author
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Giuseppe Giordano**
+
+Full Stack Developer (Java • Spring Boot • Angular • React)
